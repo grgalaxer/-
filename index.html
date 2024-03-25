@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Курс по заработку</title>
+   <link rel="icon" href="icon.png">
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+   <style>
+      body {
+         overflow-x: hidden;
+      }
+
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      .cont_for_mobile {
+         margin: 0 auto;
+         width: 100%;
+         min-height: 10px;
+         background-image: url(fontelefonf.jpg);
+         background-repeat: round;
+         background-size: 100%;
+         position: absolute;
+      }
+      
+
+
+
+      .section1 {
+         min-height: 10vw;
+
+      }
+
+      .main_content {
+         min-width: 100%;
+         min-height: 10vw;
+         margin: 0;
+         padding: 0;
+         padding-top: 30px;
+      }
+
+      .main_text {
+         width: 60%;
+         margin: 0 auto;
+         height: 10vw;
+      }
+
+      .text {
+         width: 100%;
+         height: 50%;
+         font-size: 2.2vw;
+         font-family: "League Spartan", sans-serif;
+         text-transform: uppercase;
+         font-weight: 500;
+         color: antiquewhite;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         letter-spacing: 1.2px;
+      }
+
+      .line {
+         width: 24vw;
+         height: 0.5vw;
+         background-color: orange;
+         border-radius: 20px;
+         margin: 0.5vw auto;
+      }
+
+      .text_main {
+         width: 80%;
+         margin: 0 auto;
+         height: 40vw;
+         margin-top: 4vw;
+
+         padding-top: 4vw;
+      }
+
+      .textmain {
+         font-size: 5.5vw;
+         font-family: "League Spartan", sans-serif;
+         text-transform: uppercase;
+         font-weight: 700;
+         color: antiquewhite;
+         letter-spacing: 0.4vw;
+         display: flex;
+         justify-content: center;
+      }
+
+      .textdown {
+         font-size: 5vw;
+         font-family: "League Spartan", sans-serif;
+         text-transform: uppercase;
+         font-weight: 700;
+         color: antiquewhite;
+         letter-spacing: 0.1vw;
+         display: flex;
+         justify-content: center;
+      }
+
+      .textunder {
+         width: 90%;
+         height: 50%;
+         font-size: 3.5vw;
+         font-family: "League Spartan", sans-serif;
+         font-weight: 500;
+         color: antiquewhite;
+         margin: 0 auto;
+         letter-spacing: 1.2px;
+         text-align: center;
+         margin-top: 3vw;
+         line-height: 5vw;
+      }
+
+      .textunder2 {
+         display: none;
+         width: 90%;
+         height: 50%;
+         font-size: 2vw;
+         font-family: "League Spartan", sans-serif;
+         font-weight: 500;
+         color: antiquewhite;
+         margin: 0 auto;
+         letter-spacing: 1.2px;
+         text-align: center;
+         margin-top: 3vw;
+         line-height: 3vw;
+      }
+
+      .imagee {
+         width: 100%;
+         justify-content: center;
+         display: flex;
+         align-items: center;
+         margin-top: -5vw;
+         overflow-x: hidden;
+      }
+
+      .rich {
+         margin: 0 auto;
+         position: relative;
+         z-index: 3;
+         margin-top: -13vw;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 70vw;
+         text-transform: uppercase;
+         font-size: 4.2vw;
+         font-family: "League Spartan", sans-serif;
+         font-weight: 600;
+         color: rgb(0, 0, 0);
+         letter-spacing: 0.4vw;
+         padding: 3vw 1vw;
+         background-color: orange;
+         border-radius: 1.8vw;
+         transition: .2s;
+      }
+
+      .rich:hover {
+         background-color: antiquewhite;
+         cursor: pointer;
+      }
+
+      .imagee img {
+         width: 130%;
+      }
+
+      @media screen and (min-width: 800px) {
+         .gallery {
+            width: 30%;
+         }
+         .main_text {
+            height: 5vw;
+         }
+
+         .text_main {
+            margin-top: 0;
+            padding-top: 3vw;
+            height: 10vw;
+         }
+
+         .text {
+            font-size: 1vw;
+            height: 2vw;
+         }
+
+         .line {
+            width: 10vw;
+            height: 0.2vw;
+         }
+
+         .textmain {
+            font-size: 3.3vw;
+         }
+
+         .textdown {
+            font-size: 3vw;
+         }
+
+         .textunder {
+            display: none;
+         }
+
+         .imagee {
+            width: 40%;
+            margin: 0 auto;
+         }
+
+         .imagee img {
+            width: 100%;
+         }
+
+         .textunder2 {
+            display: block;
+            margin-top: 10vw;
+         }
+         
+         .rich {
+            font-size: 1vw;
+            letter-spacing: 0.09vw;
+            width: 20vw;
+            height: 4vw;
+            border-radius: 1vw;
+            padding: 0;
+            top: 8vw;
+         }
+         .zagolovok {
+         color: antiquewhite;
+         font-size: 7vw;
+         font-family: "League Spartan", sans-serif;
+         font-weight: 500;
+         text-align: center;
+         margin-bottom: 4vw;
+         top: 0px;
+         z-index: 5;
+         transition: 1s;
+      }
+      .bg {
+         padding-bottom: 1vw;
+         backdrop-filter: blur(0.3vw);
+         background-color: rgba(0, 0, 0, 0.1);
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4); /* Горизонтальное смещение 0px, вертикальное смещение 4px, размытие 4px, цвет тени черный с прозрачностью 40% */
+      }
+      .gallery img {
+         width: 100% !important;
+      }
+      .gallery {
+         width: 20% !important;
+      }
+      .linenew {
+         height: .3vw !important;
+         width: 33vw !important;
+      }
+      .textnew1 {
+         font-size: 1vw !important;
+      }
+      .textnew {
+         font-size: 2vw !important;
+      }
+}
+
+      .block {
+         opacity: 0;
+         transform: translateY(30px);
+         transition: transform 1.5s, opacity 1.5s;
+      }
+      .section2 {
+         z-index: 2;
+         position: relative;
+         margin-top: 10vw;
+         min-height: 50px;
+         background-color: rgb(20, 20, 20);
+         box-shadow: 0 -7vw 6vw rgb(20, 20, 20);
+         box-shadow: -4px -7vw 6vw rgb(20, 20, 20);
+
+      }
+      .zagolovok {
+         color: antiquewhite;
+         font-size: 6vw;
+         font-family: "League Spartan", sans-serif;
+         font-weight: 500;
+         text-align: center;
+         top: 0px;
+         z-index: 9;
+         transition: 1s;
+         margin-bottom: 5vw;
+         padding-top: 5vw;
+      }
+      .bg {
+         padding: 3vw 0;
+         backdrop-filter: blur(0.3vw);
+         background-color: rgba(0, 0, 0, 0.1);
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4); /* Горизонтальное смещение 0px, вертикальное смещение 4px, размытие 4px, цвет тени черный с прозрачностью 40% */
+      }
+      .details {
+         width: 60%;
+         margin: 0 auto;
+         margin-top: 3vw;
+         display: grid;
+         justify-content: left;
+      }
+      .content2 {
+         z-index: 2;
+         min-height: 100px;
+
+      }
+      .linedetails {
+         width: 24vw;
+         height: 0.5vw;
+         background-color: orange;
+         border-radius: 20px;
+         margin: 0.5vw auto;
+      }
+
+/*galler*/
+.gallery {
+   position: relative;
+   overflow: hidden;
+   user-select: none;
+   -webkit-user-select: none;
+   padding: 0 3rem;
+   width: 70%;
+   margin: 0 auto;
+   margin-top: 2vw;
+}
+.gallery:hover {
+   cursor: pointer;
+}
+
+.gallery-line-container {
+   overflow: hidden
+   
+}
+
+.gallery-draggable {
+   cursor: grabbing
+}
+
+.gallery-line {
+   overflow: hidden;
+}
+
+.gallery-slide {
+   min-height: 1px;
+   float: left;
+   transform: translateZ(0);
+   overflow: hidden;
+   border-radius: 10px;
+}
+
+.gallery-dots {
+   display: flex;
+   justify-content: center
+}
+
+.gallery-dot {
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background: #ccc;
+   margin: .4rem;
+   cursor: pointer;
+   transition: all .3s;
+   border: none;
+   outline: 0;
+   padding: 0;
+   box-shadow: 0 0 10px rgb(87, 87, 87);
+}
+
+.gallery-dot-active,
+.gallery-dot:hover {
+   background: #888
+}
+
+.gallery-nav {
+   display: none;
+   justify-content: center;
+   padding: 1rem 0 0
+}
+
+.gallery-nav-left,
+.gallery-nav-right {
+   position: absolute;
+   width: 2rem;
+   height: 3rem;
+   border: none;
+   outline: 0;
+   text-indent: -1234em;
+   top: 50%;
+   margin-top: -3rem;
+   cursor: pointer;
+   transition: all .3s
+}
+
+.gallery-nav-disabled {
+   opacity: .2;
+   pointer-events: none
+}
+
+.gallery-nav-left {
+   background: url(left.svg) no-repeat center;
+   background-size: contain;
+   height: 5vw;
+   width: 5vw;
+   left: 0;
+   background-color: #ff9100;
+   border-radius: 50%;
+}
+
+.gallery-nav-right {
+   right: 0;
+   background: url(right.svg) no-repeat center;
+   background-size: contain;
+   height: 5vw;
+   width: 5vw;
+   background-color: #ff9100;
+   border-radius: 50%;
+}
+
+
+
+.slide img {
+   width: 100%;
+   pointer-events: none
+}
+
+
+      .section3 {
+         padding-top: 6vw ;
+         margin-top: -1px;
+         min-height: 150px;
+         background-color: rgb(20, 20, 20);
+      }
+      .orange {
+         color: #ff9100;
+      }
+
+
+      .linenew {
+         width: 24vw;
+         height: 0.5vw;
+         background-color: #ccc;
+         border-radius: 20px;
+         margin: 0.5vw auto;
+      }
+      .textnew {
+         width: 100%;
+         font-size: 4vw;
+         font-family: "League Spartan", sans-serif;
+         text-transform: uppercase;
+         font-weight: 500;
+         color: antiquewhite;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+      .textnew1 {
+         width: 100%;
+         font-size: 3vw;
+         font-family: "League Spartan", sans-serif;
+         text-transform: uppercase;
+         font-weight: 500;
+         color: antiquewhite;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+      .inst {
+         width: 24vw;
+         height: 5vw;
+         position: absolute;
+         border: none;
+         border-radius: 5px;
+         background-color: #cac8c8;
+         right: 20%;
+         top: 60%;
+      }
+      .inst1 {
+         width: 24vw;
+         height: 5vw;
+         position: absolute;
+         border: none;
+         border-radius: 5px;
+         background-color: #cac8c8;
+         left: 20%;
+         top: 60%;
+      }
+      .name {
+         width: 75%;
+         height: 100%;
+         float: left;
+         display: flex;
+         justify-content: right;
+         align-items: center;
+         font-family: "League Spartan", sans-serif;
+         text-transform: uppercase;
+         font-size: 1.8vw;
+         font-weight: 700;
+         color: rgb(61, 61, 61);
+      }
+      .super {
+         color: gray;
+         width: 25%;
+         height: 100%;
+         float: left;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size: 4vw;
+      }
+      .subs {
+         width: 24vw;
+         height: 5vw;
+         display: flex;
+         color: #c4c1c1;
+         text-shadow: 0 0 3px black;
+         justify-content: right;
+         align-items: center;
+         font-family: "League Spartan", sans-serif;
+         text-transform: lowercase;
+         font-size: 2.2vw;
+         position: absolute;
+         top: 54%;
+         left: 18%;
+      }
+      .subs1 {
+         width: 24vw;
+         height: 5vw;
+         display: flex;
+         color: #c4c3c1;
+         text-shadow: 0 0 4px black;
+         justify-content: right;
+         align-items: center;
+         font-family: "League Spartan", sans-serif;
+         text-transform: lowercase;
+         font-size: 2.2vw;
+         position: absolute;
+         top: 54%;
+         right: 22%;
+      }
+      .bottom-menu {
+         margin-top: -1px;
+            width: 100%;
+            height: 10vw; /* Высота меню */
+            background-color: #1f1f1f;
+            display: flex;
+        }
+        
+        .bottom-menu-column {
+            width: 25%; /* Ширина колонки */
+            height: 100%; /* Высота меню */
+        }
+      .buy {
+         width: 20vw;
+         height: 7vw;
+         background-color: #ff9100;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-family: "League Spartan", sans-serif;
+         text-transform: uppercase;
+         font-size: 3vw;
+         font-weight: 600;
+         margin: 0 auto;
+         margin-top: 5vw;
+      }
+      .link {
+         text-decoration: none;
+         color: black;
+      }
+      .hr {
+         background-color: #69696917;
+         width: 1px;
+         border: none;
+         height: 80%;
+      }
+      .by {
+         width: 90%;
+         padding-top: 2vw;
+         margin: 0 auto;
+         font-family: "League Spartan", sans-serif;
+         font-size: 2vw;
+         font-weight: 600;
+         color: rgb(129, 98, 62);
+      }
+   </style>
+</head>
+
+<body>
+   <div class="cont_for_mobile">
+      <div class="background">
+      
+      </div>
+      <div class="section1">
+         
+         <div class="main_content">
+            <div class="main_text">
+               <p class="text block">
+                  Формат: онлайн
+               </p>
+               <div class="line block">
+
+               </div>
+               <p class="text block">
+                  длительность: 12 недель
+               </p>
+            </div>
+            <div class="text_main">
+               <div class="textmain block">
+                  курс по заработку
+               </div>
+               <div class="textdown block">
+                  на перепродаже авто
+               </div>
+               <div class="textunder block">
+                  Начни зарабатывать <span style="color: orange;">от 50.000$</span><br>
+                  <span style="color: orange;">до 350.000$</span> на перепродаже<br>
+                  авто уже во время обучения
+               </div>
+            </div>
+
+            <div class="imagee block">
+               <div class="subs block">
+                  <span>
+                     23 тыс. подписчиков
+                  </span>
+               </div>
+               <a class="inst block" href="https://www.instagram.com/yaroslav.kuch/" style="text-decoration: none;">
+                  <div class="name block">
+                     <span style="height: 100%; display: flex; align-items: center; margin-top: 0.5vw;">yaroslav.kuch</span>
+                  </div>
+                  <div class="super block">
+                     <i class="material-icons super">person</i>
+                  </div>
+
+               </a>
+               <div class="subs1 block">
+                  <span>
+                     23 тыс. подписчиков
+                  </span>
+               </div>
+               <a class="inst1 block" href="https://www.instagram.com/yaroslav.kuch/" style="text-decoration: none;">
+                  <div class="name block">
+                     <span style="height: 100%; display: flex; align-items: center; margin-top: 0.5vw;">yaroslav.kuch</span>
+                  </div>
+                  <div class="super block">
+                     <i class="material-icons super">person</i>
+                  </div>
+               
+               </a>
+               <img src="img.png" height="130%">
+            </div>
+
+            <div class="rich block" >
+               <a href="#jakor" style="text-decoration: none; color: black;">начать зарабатывать</a>
+            </div>
+
+            <div class="textunder2 block">
+               Начни зарабатывать <span style="color: orange;">от 50.000$</span><br>
+               <span style="color: orange;">до 350.000$</span> на перепродаже<br>
+               авто уже во время обучения
+            </div>
+         </div>
+         <!-- После мейновый кадр -->
+         
+
+      </div>
+
+      <div class="section2">
+         <div class="content2">
+            <div class="zagolovok block" id="sticky-element">
+               <p>Отзывы</p>
+            </div>
+            <div id="gallery">
+               <div class="slide block">
+                  <img src="1.jpg" alt="Горы">
+               </div>
+               <div class="slide block">
+                  <img src="2.jpg" alt="Горы">
+               </div>
+               <div class="slide block">
+                  <img src="3.jpg" alt="Горы">
+               </div>
+               <div class="slide block" >
+                  <img src="4.jpg" alt="Горы">
+               </div>
+               <div class="slide block">
+                  <img src="5.jpg" alt="Лес с водой">
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <div class="section3">
+         <div class="main_textnew ">
+            <p class="textnew block">
+               <span style="color: #ff9100;">
+                  Цена: 999$
+               </span>
+            </p>
+            <div class="linenew block">
+         
+            </div>
+            <p class="textnew1 block">
+               <span>Средняя оценка курса: </span>
+               <i class="material-icons orange" style="font-size: 4vw;">star_rate</i>
+               <i class="material-icons orange" style="font-size: 4vw;">star_rate</i>
+               <i class="material-icons orange" style="font-size: 4vw;">star_rate</i>
+               <i class="material-icons orange" style="font-size: 4vw;">star_rate</i>
+               <i class="material-icons orange" style="font-size: 4vw;">star_rate</i>
+
+            </p>
+         </div>
+
+         <div class="buy" id="jakor">
+            <a href="pay.html" class="link">
+               Купить
+            </a>
+         </div>
+         
+      </div>
+      <div class="bottom-menu">
+         <div class="bottom-menu-column">
+            <div class="by">
+               Yaroslav Kucheriavyi
+            </div>
+         </div>
+         <hr class="hr" style="margin: auto 0; border-radius: 10px;">
+         <div class="bottom-menu-column">
+            
+         </div>
+         <hr class="hr" style="margin: auto 0; border-radius: 10px;">
+         <div class="bottom-menu-column">
+            
+         </div>
+         <hr class="hr" style="margin: auto 0; border-radius: 10px;">
+         <div class="bottom-menu-column">
+            
+         </div>
+      </div>
+   </div>
+      
+
+
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+   <script>
+      document.addEventListener('DOMContentLoaded', function () {
+         let blocks = document.querySelectorAll('.block');
+
+         function checkBlocksVisibility() {
+            let windowHeight = window.innerHeight;
+
+            blocks.forEach(block => {
+               let blockPosition = block.getBoundingClientRect().top;
+
+               if (blockPosition < windowHeight - 100) {
+                  block.style.opacity = "1";
+                  block.style.transform = "translateY(0)";
+               }
+            });
+         }
+
+         checkBlocksVisibility();
+
+         window.addEventListener('scroll', function () {
+            checkBlocksVisibility();
+         });
+      });
+
+
+   
+   SmoothScroll({
+      animationTime: 1000,
+      stepSize: 95
+    });
+    new Gallery(document.getElementById("gallery"));
+
+
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+         anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const target = document.querySelector(this.getAttribute('href'));
+
+            target.scrollIntoView({
+               behavior: 'smooth'
+            });
+         });
+      });
+   </script>
+</body>
+
+</html>
